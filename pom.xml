@@ -12,15 +12,15 @@
     <packaging>pom</packaging>
     <name>Unipoole Master Web</name>
     <description>The Unipoole Master Web declare the builds of web based projects.</description>
-    <url>http://unipoole.opencollab.co.za/reports/master-web</url>
+    <url>https://github.com/Unipoole/master-web</url>
     <!-- 
         The source control locations.
         Note that the source control name must be the same as the artifact name
     -->
     <scm>
-        <connection>scm:svn:http://svn.opencollab.co.za:18080/svn/unipoole/${project.artifactId}/trunk</connection>
-        <developerConnection>scm:svn:http://svn.opencollab.co.za:18080/svn/unipoole/${project.artifactId}/trunk</developerConnection>
-        <url>http://svn.opencollab.co.za:18080/viewvc/unipoole/${project.artifactId}/trunk</url>
+        <connection>scm:git:https://github.com/Unipoole/master-web/tree/master</connection>
+        <developerConnection>scm:git:https://github.com/Unipoole/master-web/tree/master</developerConnection>
+        <url>https://github.com/Unipoole/master-web/tree/master</url>
     </scm>
     <!-- This is dependencies that's valid for all unipoole web sites. -->
     <dependencies>
