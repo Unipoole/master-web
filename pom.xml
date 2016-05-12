@@ -247,6 +247,30 @@
             </plugin>
         </plugins>
     </build>
+     <repositories>
+        <repository>
+            <name>OpenCollab Nexus Release Repo</name>
+            <id>oc-nexus-releases</id>
+            <url>http://nexus.opencollab.co.za/nexus/content/repositories/releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <name>OpenCollab Nexus Snapshot Repo</name>
+            <id>oc-nexus-snapshots</id>
+            <url>http://nexus.opencollab.co.za/nexus/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <profiles>
         <profile>
             <id>local</id>
@@ -260,34 +284,6 @@
                         <artifactId>tomcat7-maven-plugin</artifactId>
                         <configuration>
                             <url>http://localhost:8080/manager/text</url>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>nightly</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.tomcat.maven</groupId>
-                        <artifactId>tomcat7-maven-plugin</artifactId>
-                        <configuration>
-                            <url>http://unipoole.opencollab.co.za:8081/manager/text</url>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-         <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.tomcat.maven</groupId>
-                        <artifactId>tomcat7-maven-plugin</artifactId>
-                        <configuration>
-                            <url>http://unipoole.opencollab.co.za/manager/text</url>
                         </configuration>
                     </plugin>
                 </plugins>
