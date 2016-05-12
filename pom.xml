@@ -20,7 +20,7 @@
     <scm>
         <connection>scm:git:https://github.com/Unipoole/master-web/tree/master</connection>
         <developerConnection>scm:git:https://github.com/Unipoole/master-web/tree/master</developerConnection>
-        <url>https://github.com/Unipoole/master-web/tree/master</url>
+        <url>https://github.com/Unipoole/master-web</url>
     </scm>
     <!-- This is dependencies that's valid for all unipoole web sites. -->
     <dependencies>
@@ -304,4 +304,8 @@
             </build>
         </profile>
     </profiles>
+    <ciManagement>
+    	<system>Travis-CI</system>
+    	<url>https://travis-ci.org/Unipoole/master-web</url>
+    </ciManagement>
 </project>
